@@ -1,0 +1,493 @@
+@charset "UTF-8";
+.media:after, .hxyx-main dl:after {
+  content: "";
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.jzft-ul, .jzft-jp, .hxyx-main ul, .tabBox .hd ul, .nav-ul {
+  font-size: 0;
+  -webkit-text-size-adjust: none;
+}
+
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* 设置图片视频等自适应调整 */
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  width: 100%;
+  /* ie8 */
+  display: block;
+}
+
+.video embed,
+.video object,
+.video iframe {
+  width: 100%;
+  height: auto;
+}
+
+/* 公共库 */
+body,
+div,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+fieldset,
+legend,
+input,
+button,
+figcaption,
+figure,
+textarea,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  width: 100%;
+  margin: 0 auto;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0084ff;
+}
+
+a img {
+  border: none;
+}
+
+a > img {
+  vertical-align: bottom;
+}
+
+/* 页面主代码 */
+body {
+  font-family: 'Heiti SC', 'Microsoft YaHei', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  background: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  *overflow-y: auto !important;
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.55rem;
+  line-height: 1.6em;
+}
+
+.loading {
+  padding: 0 0.6rem;
+  color: #666666;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.logo {
+  background: #e75555;
+  position: relative;
+}
+.logo .tel {
+  position: absolute;
+  right: 0.425rem;
+  top: 0.675rem;
+  width: 1.575rem;
+  height: 1.575rem;
+}
+
+.banner, section {
+  margin-bottom: 1.2rem;
+}
+
+.biaoti {
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+.biaoti h2 {
+  font-size: 1.25rem;
+  color: #e75555;
+  margin-bottom: 0.4rem;
+}
+.biaoti h2:after {
+  content: "";
+  height: 0.075rem;
+  width: 1.4rem;
+  display: inline-block;
+  background: #e75555;
+  vertical-align: middle;
+  margin-left: 0.2rem;
+}
+.biaoti h2:before {
+  content: "";
+  height: 0.075rem;
+  width: 1.4rem;
+  display: inline-block;
+  background: #e75555;
+  vertical-align: middle;
+  margin-right: 0.2rem;
+}
+.biaoti p {
+  font-size: 0.65rem;
+}
+
+.media-list {
+  background: #f0f1f6 url(../images/dh-bg.png);
+  padding: 1rem 0.8rem 1.2rem;
+}
+.media-list .media-object {
+  width: 1.525rem;
+  height: 1.525rem;
+}
+
+.media {
+  margin-bottom: 0.6rem;
+}
+
+.media-hz {
+  background: #fff;
+  display: inline-block;
+  padding: 0.3rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  position: relative;
+  float: right;
+  -webkit-box-shadow: 0 0.1rem 0.1rem #d1d2d6;
+  -moz-box-shadow: 0 0.1rem 0.1rem #d1d2d6;
+  box-shadow: 0 0.1rem 0.1rem #d1d2d6;
+}
+.media-hz:after {
+  position: absolute;
+  top: 0.2rem;
+  right: -0.2rem;
+  content: "";
+  display: inline-block;
+  border-left: 0.2rem solid #fff;
+  border-top: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid transparent;
+}
+
+.media-width-l {
+  width: 72%;
+}
+
+.media-right {
+  float: right;
+  margin-left: 0.4rem;
+}
+
+.media-left {
+  float: left;
+  margin-right: 0.4rem;
+}
+
+.media-zj {
+  background: #a0e759;
+  display: inline-block;
+  padding: 0.3rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  position: relative;
+  float: left;
+  -webkit-box-shadow: 0 0.1rem 0.1rem #d1d2d6;
+  -moz-box-shadow: 0 0.1rem 0.1rem #d1d2d6;
+  box-shadow: 0 0.1rem 0.1rem #d1d2d6;
+}
+.media-zj:after {
+  position: absolute;
+  top: 0.2rem;
+  left: -0.2rem;
+  content: "";
+  display: inline-block;
+  border-right: 0.2rem solid #a0e759;
+  border-top: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid transparent;
+}
+
+.h3 {
+  background: #e75555;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  height: 2.75rem;
+  line-height: 2.6em;
+}
+
+.jzft {
+  width: 96%;
+  margin: 0 auto;
+  background: #f4f4f6;
+  position: relative;
+  top: -0.6rem;
+  padding: 0.6rem 0;
+}
+
+.jzft-ul {
+  text-align: center;
+  margin: 0.8rem 0 0.6rem;
+}
+.jzft-ul li {
+  width: 27%;
+  display: inline-block;
+  position: relative;
+  border: 0.075rem solid #fff;
+  margin: 0 0.3rem;
+}
+.jzft-ul li span {
+  position: absolute;
+  left: -0.2rem;
+  bottom: -0.3rem;
+  font-size: 0.45rem;
+  background: #e75555;
+  color: #fff;
+  padding: 0.2rem 0.3rem;
+  line-height: 1.4em;
+}
+.jzft-ul li:nth-of-type(1) span {
+  background: #e77055;
+}
+.jzft-ul li:nth-of-type(2) span {
+  background: #e7556d;
+}
+
+.jzft-jp {
+  text-align: center;
+  background: #fff;
+  width: 94%;
+  margin: 0.6rem auto 0;
+  padding-top: 0.4rem;
+}
+.jzft-jp li {
+  width: 31%;
+  display: inline-block;
+  margin: 0 0.1rem;
+}
+.jzft-jp li span {
+  font-size: 0.55rem;
+  line-height: 2em;
+}
+
+.btn-help {
+  font-size: 0.55rem;
+  line-height: 0.7rem;
+  text-align: center;
+  margin: 0.4rem 0;
+}
+.btn-help a {
+  color: #666666;
+  text-decoration: underline;
+}
+
+.btn {
+  background: #e79355;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  border-radius: 10rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+.btn:before {
+  content: "";
+  display: inline-block;
+  width: 1.95rem;
+  height: 1.95rem;
+  background: url(../images/tel.png) no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  margin-left: 0.2rem;
+}
+.btn a {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.55rem;
+  vertical-align: middle;
+  padding: 0.4rem 0;
+}
+.btn strong {
+  display: block;
+  font-size: 0.85rem;
+}
+.btn .tel {
+  text-align: left;
+}
+.btn .zaixian {
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-left: 0.025rem solid #eeb895;
+  padding-left: 0.4rem;
+}
+.btn .zaixian:after {
+  content: "";
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.7rem;
+  background: url(../images/shou.png) no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  margin-left: 0.2rem;
+}
+
+.hxys {
+  margin-top: 0.4rem;
+}
+
+.hxyx-main {
+  width: 96%;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+  top: -0.6rem;
+  padding-top: 0.8rem;
+}
+.hxyx-main ul {
+  text-align: center;
+}
+.hxyx-main ul li {
+  width: 46%;
+  display: inline-block;
+  font-size: 0.55rem;
+  border: 0.025rem solid #cccccc;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  border-radius: 10rem;
+  line-height: 2.4em;
+  text-align: left;
+  margin: 0 1% 0.2rem;
+  padding-left: 0.2rem;
+}
+.hxyx-main ul li span {
+  background: radial-gradient(#fecaca, #ed8181);
+  color: #fff;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  border-radius: 10rem;
+  display: inline;
+  text-align: center;
+  padding: 0.2rem;
+  margin-right: 0.2rem;
+}
+.hxyx-main ul li.last {
+  width: 96%;
+}
+.hxyx-main dl {
+  background: #f4f4f6;
+  margin-top: 0.6rem;
+}
+.hxyx-main dl dt {
+  width: 2.25rem;
+  height: 4.625rem;
+  background: url(../images/shdc-bg.png) no-repeat;
+  background-size: 100% 100%;
+  font-size: 0.6rem;
+  color: #fff;
+  float: left;
+  margin-right: 0.4rem;
+}
+.hxyx-main dl dt h3 {
+  padding: 1rem 0.2rem 0;
+  text-align: center;
+}
+.hxyx-main dl dd p {
+  padding: 0.5rem 0.6rem 0;
+}
+
+.tabBox {
+  margin-top: 0.6rem;
+}
+.tabBox .hd ul {
+  text-align: center;
+}
+.tabBox .hd ul li {
+  width: 20%;
+  display: inline-block;
+  margin: 0 0.2rem;
+  border: 0.1rem solid #dcdcdc;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.tabBox .hd ul li.on {
+  border: 0.1rem solid #e75555;
+}
+.tabBox .hd {
+  margin-top: 0.6rem;
+}
+
+.ksyy {
+  width: 96%;
+  margin: 0 auto;
+  background: #f4f4f6;
+  position: relative;
+  top: -0.6rem;
+  padding: 0.6rem 0;
+}
+
+.section-yy {
+  margin-bottom: 0;
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.nav-ul {
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+.nav-ul li {
+  width: 24.4999%;
+  display: inline-block;
+  margin: 0 0.25%;
+}
+.nav-ul li a {
+  font-size: 0.6rem;
+  background: #e75555;
+  color: #fff;
+  display: block;
+  line-height: 3em;
+}
+.nav-ul li:nth-of-type(even) a {
+  background: #e96666;
+}
+
+/*# sourceMappingURL=styles.css.map */
